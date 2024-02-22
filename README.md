@@ -15,6 +15,11 @@ access group.
 
 Follow the setup to get this tool running.
 
+# Why does this fork exist?
+For those running the dev version of BFACP, the original code does not work due to different BFACP table names.
+This fork has been updated to work with the dev version of BFACP. All the credit goes to 
+[Hedius](https://github.com/Hedius) for the original code.
+
 # Setup
 ## docker (docker-compose)
  1. clone the repository
