@@ -107,8 +107,8 @@ class AdKatsDB(Connector):
         command = f"""\
         SELECT DISTINCT email
         FROM bfacp_users
-        INNER JOIN bfacp_assigned_roles bar on bfacp_users.id = bar.user_id
-        INNER JOIN bfacp_roles br on bar.role_id = br.id
+        INNER JOIN bfacp_user_role bur on bfacp_users.id = bur.user_id
+        INNER JOIN bfacp_roles br on bur.role_id = br.id
         WHERE br.name IN ({format_strings})
         ORDER BY email
         """
